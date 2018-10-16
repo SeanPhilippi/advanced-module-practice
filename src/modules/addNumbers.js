@@ -1,9 +1,12 @@
-import add from "./add";
+let add = require("./add");
 
-export function addTen(num) {
+function a(num) {
   return add(num,10);
 }
 
-export function addFive(num) {
+function b(num) {
   return add(num, 5);
 }
+
+module.exports.addTen = a;
+module.exports.addFive = b;
